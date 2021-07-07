@@ -1,5 +1,4 @@
-package io.github.doflavio.codeblog.serviceImpl;
-
+package io.github.doflavio.codeblog.service.serviceImpl;
 
 import io.github.doflavio.codeblog.model.Post;
 import io.github.doflavio.codeblog.repository.BlogRepository;
@@ -18,7 +17,8 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public List<Post> findAll() {
-        return blogRepository.findAll(sortByIdAsc());
+        //return blogRepository.findAll(sortByIdAsc());
+        return blogRepository.findAll();
     }
 
     @Override

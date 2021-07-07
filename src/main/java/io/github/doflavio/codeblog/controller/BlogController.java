@@ -30,6 +30,7 @@ public class BlogController {
     public ModelAndView getPosts(){
         ModelAndView mv = new ModelAndView("posts");
         List<Post> posts = blogService.findAll();
+        System.out.println("Post :" + posts);
         mv.addObject("posts", posts);
         return mv;
     }
